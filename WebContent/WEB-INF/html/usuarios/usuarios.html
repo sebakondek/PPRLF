@@ -1,4 +1,9 @@
  <div>
+   
+   <form class="form-inline buscadorUsu">
+       <input type="text" class="form-control" placeholder="Buscar"/>
+       <button type="button" class="btn btn-default buscarBtn">Buscar</button>
+     </form>
     <table class="table table-bordered recibos">
         <tr>
             <th><b>ID</b></th>
@@ -9,7 +14,7 @@
         <tr>
             <td>1</td>
             <td>Roberto Perez</td>
-            <td><b>FIRMADO</b></td>
+            <td class="noFirm"><b>NO FIRMADO</b></td>
             <td class="opciones"><button type="button" class="btn btn-primary">Ver</button></td>
         </tr>
     </table>
@@ -21,9 +26,9 @@
             <th><b>OPCIONES</b></th>
         </tr>
         <tr>
-            <td>Agosto</td>
-            <td>2016</td>
-            <td><b>{{firmadoSI ? "SI" : "NO"}}</b></td>
+            <td>2</td>
+            <td>Alicia Perez</td>
+            <td><b>FIRMADO</b></td>
             <td class="opciones">
                 <button type="button" class="btn btn-primary">Ver</button>
                 <button type="button" class="btn btn-primary" ng-if=firmadoSI>Imprimir</button>
@@ -31,9 +36,9 @@
             </td>
         </tr>
         <tr>
-            <td>Julio</td>
-            <td>2016</td>
-            <td><b>{{firmadoSI ? "SI" : "NO"}}</b></td>
+            <td>3</td>
+            <td>Carlos Sanchez</td>
+            <td><b>FIRMADO</b></td>
             <td class="opciones">
                 <button type="button" class="btn btn-primary">Ver</button>
                 <button type="button" class="btn btn-primary" ng-if=firmadoSI>Imprimir</button>

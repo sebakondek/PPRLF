@@ -120,22 +120,26 @@ input:checked + .slider:before {
     width: 30%;
 }
 
-.buscador {
+.buscadorRec {
     margin-bottom: 30px;
     width: 70%;
     display: flex;
 }
 
-.buscador .form-control{
+.buscadorRec .form-control{
     width: 15%;
 }
 
-.buscador p {
+.buscadorRec p {
     margin-right: 5px;
 }
 
-.buscador #hastaBuscar, .buscarBtn{
+.buscadorRec #hastaBuscar, .buscarBtn{
     margin-left: 10px;
+}
+
+.buscadorUsu {
+    margin-bottom: 30px;
 }
 
 #logo {
@@ -161,4 +165,8 @@ input:checked + .slider:before {
 
 .navbar-inverse .navbar-brand {
     color: #080808;
+}
+
+.noFirm {
+    color: red;
 }

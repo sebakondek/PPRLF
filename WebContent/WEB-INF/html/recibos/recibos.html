@@ -1,9 +1,6 @@
-<script>
-    
-</script>
-
 <div ng-controller="recibosCtrl">
-    <div class="buscador">
+   
+    <div class="buscadorRec">
         <p class="form-control-static"><b>Desde</b></p>
         <select ng-model="desdeMonth" ng-options="x for x in months" class="form-control">
             <option value="" disabled>MES</option>
@@ -33,7 +30,7 @@
             <tr>
                 <td>Septiembre</td>
                 <td>2016</td>
-                <td class="firmado"><b>{{firmadoNO ? "SI" : "NO"}}</b></td>
+                <td class="noFirm"><b>{{firmadoNO ? "SI" : "NO"}}</b></td>
                 <td class="opciones"><button type="button" class="btn btn-primary">Ver</button></td>
             </tr>
         </table>
@@ -47,7 +44,7 @@
             <tr>
                 <td>Agosto</td>
                 <td>2016</td>
-                <td class="firmado"><b>{{firmadoSI ? "SI" : "NO"}}</b></td>
+                <td><b>{{firmadoSI ? "SI" : "NO"}}</b></td>
                 <td class="opciones">
                     <button type="button" class="btn btn-primary">Ver</button>
                     <button type="button" class="btn btn-primary" ng-if=firmadoSI>Imprimir</button>
@@ -66,4 +63,5 @@
             </tr>
         </table>
     </div>
+    
 </div>
