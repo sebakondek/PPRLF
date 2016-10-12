@@ -1,0 +1,58 @@
+<div ng-controller="recibosCtrl">
+    <div class="buscador">
+           <p>Desde</p>
+            <select ng-model="desdeMonth" ng-options="x.month for x in months">
+                <option value="">MES</option>
+            </select>
+            <select ng-model="desdeYear" ng-options="x.year for x in years">
+                <option value="">AÑO</option>
+            </select>
+            
+        <button type="button" class="btn btn-default">Buscar</button>    
+    </div>
+
+    <div>
+        <table class="table table-bordered recibos">
+            <tr>
+                <th><b>MES</b></th>
+                <th><b>AÑO</b></th>
+                <th><b>FIRMADO</b></th>
+                <th><b>OPCIONES</b></th>
+            </tr>
+            <tr>
+                <td>Septiembre</td>
+                <td>2016</td>
+                <td><b>{{firmadoNO ? "SI" : "NO"}}</b></td>
+                <td class="opciones"><button type="button" class="btn btn-primary">Ver</button></td>
+            </tr>
+        </table>
+        <table class="table table-bordered recibos">
+           <tr>
+                <th><b>MES</b></th>
+                <th><b>AÑO</b></th>
+                <th><b>FIRMADO</b></th>
+                <th><b>OPCIONES</b></th>
+            </tr>
+            <tr>
+                <td>Agosto</td>
+                <td>2016</td>
+                <td><b>{{firmadoSI ? "SI" : "NO"}}</b></td>
+                <td class="opciones">
+                    <button type="button" class="btn btn-primary">Ver</button>
+                    <button type="button" class="btn btn-primary" ng-if=firmadoSI>Imprimir</button>
+                    <button type="button" class="btn btn-primary" ng-if=firmadoSI>Descargar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>2016</td>
+                <td><b>{{firmadoSI ? "SI" : "NO"}}</b></td>
+                <td class="opciones">
+                    <button type="button" class="btn btn-primary">Ver</button>
+                    <button type="button" class="btn btn-primary" ng-if=firmadoSI>Imprimir</button>
+                    <button type="button" class="btn btn-primary" ng-if=firmadoSI>Descargar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
