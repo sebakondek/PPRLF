@@ -159,8 +159,18 @@ input:checked + .slider:before {
     color: #080808;
 }
 
+.navbar-inverse .navbar-nav>.active>a {
+    color:#FFF;
+    background-color: #4a4848;
+}
+
 .navbar-inverse .navbar-nav>#der>a:hover {
     color: #080808;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color:#FFF;
+    background-color: #4a4848;
 }
 
 .navbar-inverse .navbar-brand {
