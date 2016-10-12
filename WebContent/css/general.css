@@ -122,6 +122,20 @@ input:checked + .slider:before {
 
 .buscador {
     margin-bottom: 30px;
+    width: 70%;
+    display: flex;
+}
+
+.buscador .form-control{
+    width: 15%;
+}
+
+.buscador p {
+    margin-right: 5px;
+}
+
+.buscador #hastaBuscar, .buscarBtn{
+    margin-left: 10px;
 }
 
 #logo {
