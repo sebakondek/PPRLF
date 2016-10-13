@@ -1,10 +1,15 @@
 <div>
 
+    <!--   Buscador-->
+
     <form class="form-inline buscadorUsu">
         <input type="text" class="form-control" placeholder="Buscar" />
         <button type="button" class="btn btn-default buscarBtn">Buscar</button>
         <button type="button" class="btn btn-warning crearUsuBtn" id="nuevoUsrBtn">Nuevo Usuario</button>
     </form>
+
+    <!--    Tabla Usuarios Sin Firmar-->
+
     <table class="table table-bordered recibos">
         <tr>
             <th class="idField"><b>ID</b></th>
@@ -24,6 +29,10 @@
             </td>
         </tr>
     </table>
+
+
+    <!--    Tabla Usuarios Firmaron-->
+
     <table class="table table-bordered recibos">
         <tr>
             <th class="idField"><b>ID</b></th>
@@ -53,6 +62,7 @@
         </tr>
     </table>
 
+    <!--    Modal Ver Usuario-->
 
     <div class="modal fade" id="myModalUsu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -84,7 +94,7 @@
                         <button type="button" class="btn btn-warning verTickets">Ver/Ocultar Tickets</button>
                     </div>
                     <div hidden id="divTicket">
-                        hola
+                        hola soy un ticket xDxDxDxD
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -93,6 +103,8 @@
             </div>
         </div>
     </div>
+
+    <!--    Modal Crear/Editar Usuario-->
 
     <div class="modal fade" id="myModalCrearUsu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -115,11 +127,11 @@
                             <label for="email">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="Email">
                         </div>
-                        <button type="submit" class="btn btn-success">Guardar</button>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Guardar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

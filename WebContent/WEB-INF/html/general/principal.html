@@ -51,13 +51,13 @@
                 $("#myModalRec").modal("hide");
                 $("#myModalRechRec").modal("show");
             });
-            
-            $("#container").delegate("#PDFBtn", "click", function(){
-               $("#divPDFTicket").toggle();
+
+            $("#container").delegate("#PDFBtn", "click", function () {
+                $("#divPDFTicket").toggle();
             });
-            
-            $("#container").delegate(".verTickets", "click", function(){
-               $("#divTicket").toggle();
+
+            $("#container").delegate(".verTickets", "click", function () {
+                $("#divTicket").toggle();
             });
         });
     </script>
@@ -108,7 +108,7 @@
         <div id="recibos" ng-if="tab === 2" ng-include="'WEB-INF/html/recibos/recibos.html'"></div>
         <div id="usuarios" ng-if="tab === 3" ng-include="'WEB-INF/html/usuarios/usuarios.html'"></div>
         <div id="tickets" ng-if="tab === 4" ng-include="'WEB-INF/html/tickets/tickets.html'"></div>
-        
+
     </div>
     <!-- /.container -->
 
