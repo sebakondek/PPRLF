@@ -30,6 +30,11 @@
                 $('#tabs li').removeClass('active');
                 $(this).addClass('active');
             });
+            
+            $('#container').delegate(".readMore", "click", function () {
+                $('.panel').removeClass('col-md-4', "noticiaMenor");
+                $(this).addClass('col-md-12');
+            });
         });
     </script>
 
@@ -102,7 +107,7 @@
     </nav>
 
     <!-- container -->
-    <div id="container" class="container" ng-init="tab = 3">
+    <div id="container" class="container" ng-init="tab = 1">
 
         <div id="noticias" ng-if="tab === 1" ng-include="'WEB-INF/html/noticias/noticias.html'"></div>
         <div id="recibos" ng-if="tab === 2" ng-include="'WEB-INF/html/recibos/recibos.html'"></div>

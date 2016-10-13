@@ -222,3 +222,23 @@ tr > td {
 #comentarios {
     resize: none;
 }
+
+.newsFecha {
+    margin-top: -20px;
+    float: right
+}
+
+.noticiaMenor {
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.newsBox {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.readMore {
+    float: right;
+}
