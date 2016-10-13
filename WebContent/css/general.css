@@ -107,9 +107,10 @@ input:checked + .slider:before {
     float: right;
 }
 
-.recibos tr > th, tr > td {
+.recibos tr > th,
+tr > td {
     text-align: center;
-    width: 300px;
+    width: 400px;
 }
 
 .recibos tr > th {
@@ -117,7 +118,11 @@ input:checked + .slider:before {
 }
 
 .opciones {
-    width: 30%;
+    width: 35%;
+}
+
+.idField {
+    width: 10%;
 }
 
 .buscadorRec {
@@ -126,7 +131,7 @@ input:checked + .slider:before {
     display: flex;
 }
 
-.buscadorRec .form-control{
+.buscadorRec .form-control {
     width: 15%;
 }
 
@@ -134,7 +139,8 @@ input:checked + .slider:before {
     margin-right: 5px;
 }
 
-.buscadorRec #hastaBuscar, .buscarBtn{
+.buscadorRec #hastaBuscar,
+.buscarBtn {
     margin-left: 10px;
 }
 
@@ -160,7 +166,7 @@ input:checked + .slider:before {
 }
 
 .navbar-inverse .navbar-nav>.active>a {
-    color:#FFF;
+    color: #FFF;
     background-color: #4a4848;
 }
 
@@ -168,8 +174,10 @@ input:checked + .slider:before {
     color: #080808;
 }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    color:#FFF;
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #FFF;
     background-color: #4a4848;
 }
 
@@ -179,4 +187,38 @@ input:checked + .slider:before {
 
 .noFirm {
     color: red;
+}
+
+#nuevoUsrBtn {
+    float: right;
+}
+
+.glyphicon {
+    margin-right: 5px;
+}
+
+.table-login td {
+    border: none !important;
+}
+
+.modalVerUsu > tbody > tr > th {
+    background-color: #a9a9a9;
+}
+
+#pdf {
+    margin-top: 25em;
+    margin-bottom: 25em;
+    text-align: center;
+}
+
+#pdfTicket {
+    text-align: center;
+}
+
+#PDFBtn {
+    margin-bottom: 30px;
+}
+
+#comentarios {
+    resize: none;
 }

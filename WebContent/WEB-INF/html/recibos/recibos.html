@@ -1,5 +1,5 @@
 <div ng-controller="recibosCtrl">
-   
+
     <div class="buscadorRec">
         <p class="form-control-static"><b>Desde</b></p>
         <select ng-model="desdeMonth" ng-options="x for x in months" class="form-control">
@@ -31,11 +31,13 @@
                 <td>Septiembre</td>
                 <td>2016</td>
                 <td class="noFirm"><b>{{firmadoNO ? "SI" : "NO"}}</b></td>
-                <td class="opciones"><button type="button" class="btn btn-primary">Ver</button></td>
+                <td class="opciones">
+                    <button type="button" class="btn btn-primary verRecBtn"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Ver</button>
+                </td>
             </tr>
         </table>
         <table class="table table-bordered recibos">
-           <tr>
+            <tr>
                 <th><b>MES</b></th>
                 <th><b>AÑO</b></th>
                 <th><b>FIRMADO</b></th>
@@ -46,22 +48,71 @@
                 <td>2016</td>
                 <td><b>{{firmadoSI ? "SI" : "NO"}}</b></td>
                 <td class="opciones">
-                    <button type="button" class="btn btn-primary">Ver</button>
-                    <button type="button" class="btn btn-primary" ng-if=firmadoSI>Imprimir</button>
-                    <button type="button" class="btn btn-primary" ng-if=firmadoSI>Descargar</button>
+                    <button type="button" class="btn btn-primary verRecBtn"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Ver</button>
+                    <button type="button" class="btn btn-warning" ng-if=firmadoSI><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Imprimir</button>
+                    <button type="button" class="btn btn-success" ng-if=firmadoSI><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>Descargar</button>
                 </td>
             </tr>
             <tr>
                 <td>Julio</td>
                 <td>2016</td>
-                <td class="firmado"><b>{{firmadoSI ? "SI" : "NO"}}</b></td>
+                <td><b>{{firmadoSI ? "SI" : "NO"}}</b></td>
                 <td class="opciones">
-                    <button type="button" class="btn btn-primary">Ver</button>
-                    <button type="button" class="btn btn-primary" ng-if=firmadoSI>Imprimir</button>
-                    <button type="button" class="btn btn-primary" ng-if=firmadoSI>Descargar</button>
+                    <button type="button" class="btn btn-primary verRecBtn"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Ver</button>
+                    <button type="button" class="btn btn-warning" ng-if=firmadoSI><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Imprimir</button>
+                    <button type="button" class="btn btn-success" ng-if=firmadoSI><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>Descargar</button>
                 </td>
             </tr>
         </table>
     </div>
-    
+
+    <div class="modal fade" id="myModalRec" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><b>Agosto/2016</b></h4>
+                </div>
+                <div class="modal-body">
+                    <p id="pdf"><b>PDF</b></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Firmar</button>
+                    <button type="button" class="btn btn-danger rechRecBtn">Rechazar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModalRechRec" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><b>Nuevo Ticket</b></h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-primary" id="PDFBtn">Ver/Ocultar PDF</button>
+                    <div hidden id="divPDFTicket">
+                        <p id="pdfTicket"><b>PDF</b></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="problemas"><b>Problemas Comunes</b></label>
+                        <select id="problemas" class="form-control" ng-model="problemaSelected" ng-options="x for x in problemas">
+                            <option value="" disabled>Seleccione una Opcion</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentarios"><b>Comentario Adicional</b></label>
+                        <textarea id="comentarios" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Enviar</button>
+                    <button type="button" class="btn btn-danger RechRecBtn" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
