@@ -1,0 +1,255 @@
+<script>
+    
+</script>
+
+<div ng-controller="ticketsCtrl">
+    
+    <div class="buscador">
+        
+<!--        from -->
+        <p class="form-control-static"><b>FROM</b></p>
+        <select ng-model="desdeMonth" ng-options="x for x in months" class="form-control">
+            <option value="" disabled>MONTH</option>
+        </select>
+        <select ng-model="desdeYear" ng-options="x for x in years" class="form-control">
+            <option value="" disabled>YEAR</option>
+        </select>
+        
+<!--        to  -->
+        <p id="hastaBuscar" class="form-control-static"><b>TO</b></p>
+        <select ng-model="hastaMonth" ng-options="x for x in months" class="form-control">
+            <option value="" disabled>MONTH</option>
+        </select>
+        <select ng-model="hastaYear" ng-options="x for x in years" class="form-control">
+            <option value="" disabled>YEAR</option>
+        </select>
+        
+<!--        status  -->
+        <select ng-model="status" ng-options="st for st in status" class="form-control">
+            <option value="" disabled>STATUS</option>
+        </select>
+
+        <button type="button" class="btn btn-default buscarBtn">Buscar</button>
+        
+    </div>
+        
+    
+<!--        
+        tickets
+-->
+
+
+    
+    
+    
+    
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Tickets
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#todos-pills" data-toggle="tab" aria-expanded="true">Todos</a>
+                </li>
+                <li class=""><a href="#mios-pills" data-toggle="tab" aria-expanded="false">Mios</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+        
+        
+                <div class="tab-pane fade active in" id="todos-pills">
+                    <div class="panel-body">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" class="">11/07/2016 13:41</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>User: user</li>
+                                            <li>Status: OPEN</li>
+                                            <li><button type="button" class="btn btn-primary">Asign to me</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed" aria-expanded="false">13/07/2016 13:43</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>User: user</li>
+                                            <li>Status: OPEN</li>
+                                            <li><button type="button" class="btn btn-primary">Asign to me</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false">17/07/2016 11:53</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>User: user</li>
+                                            <li>Status: OPEN</li>
+                                            <li><button type="button" class="btn btn-primary">Asign to me</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        
+                <div class="tab-pane fade" id="mios-pills">
+                    <div class="panel-body">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" class="">11/07/2016 13:41</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse in" aria-expanded="true">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>User: user</li>
+                                            <li>Status: OPEN</li>
+                                            <li><button type="button" class="btn btn-primary">Asign to me</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+        
+
+            </div>
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+</div>
+    
+    
+                                    
+    
+<!--    
+        chat
+-->
+    
+    <div id="page-wrapper" style="min-height: 660px;">
+
+        <div class="col-md-8">
+            <div class="chat-panel panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-comments fa-fw"></i> Chat
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <ul class="chat">
+                        <li class="left clearfix">
+                            <span class="chat-img pull-left">
+                                <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">
+                            </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">User</strong>
+                                    <small class="pull-right text-muted">
+                                        <i class="fa fa-clock-o fa-fw"></i> 15 mins ago
+                                    </small>
+                                </div>
+                                <p>
+                                    Tuve un problema con blabla.
+                                </p>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        <li class="right clearfix">
+                            <span class="chat-img pull-right">
+                                <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                            </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted">
+                                        <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                    <strong class="pull-right primary-font">Yo</strong>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        <li class="left clearfix">
+                            <span class="chat-img pull-left">
+                                <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">
+                            </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">User</strong>
+                                    <small class="pull-right text-muted">
+                                        <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        <li class="right clearfix">
+                            <span class="chat-img pull-right">
+                                <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                            </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted">
+                                        <i class="fa fa-clock-o fa-fw"></i> 12 mins ago</small>
+                                    <strong class="pull-right primary-font">Yo</strong>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.panel-body -->
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                Send
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <!-- /.panel-footer -->
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
