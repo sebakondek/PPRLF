@@ -31,10 +31,23 @@
                 $('#tabs li').removeClass('active');
                 $(this).addClass('active');
             });
-            
+
             $('#container').delegate(".readMore", "click", function () {
-                $('.panel').removeClass('col-md-4', "noticiaMenor");
-                $(this).addClass('col-md-12');
+                $(this).parents('.panel').removeClass('col-md-4');
+                $(this).parents('.panel').removeClass("noticiaMenor");
+                $(this).removeClass("readMore");
+                $(this).addClass("readLess");
+                $(this).parents('.panel').addClass('col-md-12');
+                $(this).html("Leer Menos");
+            });
+
+            $('#container').delegate(".readLess", "click", function () {
+                $(this).parents('.panel').removeClass('col-md-12');
+                $(this).removeClass("readLess");
+                $(this).parents('.panel').addClass('col-md-4');
+                $(this).parents('.panel').addClass("noticiaMenor");
+                $(this).addClass("readMore");
+                $(this).html("Leer Más");
             });
         });
     </script>
@@ -65,6 +78,16 @@
             $("#container").delegate(".verTickets", "click", function () {
                 $("#divTicket").toggle();
             });
+
+            $("#container").delegate(".assignBtn", "click", function () {
+                $(".comentarioPanel").addClass("hidden");
+                $(".chatPanel").removeClass("hidden");
+            });
+
+            $("#container").delegate(".allBtn", "click", function () {
+                $(".chatPanel").addClass("hidden");
+                $(".comentarioPanel").removeClass("hidden");
+            });
         });
     </script>
 </head>
@@ -93,7 +116,7 @@
                 <ul class="nav navbar-nav">
                     <li ng-show=role id="switchBtn">
                         <label class="switch">
-                            <input type="checkbox" ng-model="$parent.admin" ng-init="$parent.admin = role">
+                            <input type="checkbox" ng-model="$parent.admin" ng-click="ng-if" ng-init="$parent.admin = role">
                             <div class="slider round"></div>
                         </label>
                     </li>

@@ -1,5 +1,9 @@
+body {
+    background-image: url(/WebContent/img/payroll2.jpg);
+}
+
 #loginForm {
-    margin-top: 10em;
+    margin-top: 5em;
 }
 
 #login {
@@ -114,7 +118,11 @@ tr > td {
 }
 
 .recibos tr > th {
-    background-color: darkgray;
+    background-color: #c3c1c1;
+}
+
+.recibos tr > td {
+    background-color: #efecec;
 }
 
 .opciones {
@@ -135,8 +143,14 @@ tr > td {
     width: 15%;
 }
 
+.buscadorRec #statusOption {
+    margin-left: 20px;
+    width: 20%;
+}
+
 .buscadorRec p {
     margin-right: 5px;
+    color: #080808;
 }
 
 .buscadorRec #hastaBuscar,
@@ -157,7 +171,7 @@ tr > td {
 }
 
 .navbar-inverse {
-    background-color: #878787;
+    background-color: #dedbdb;
     border-color: #878787;
 }
 
@@ -191,6 +205,12 @@ tr > td {
 
 #nuevoUsrBtn {
     float: right;
+    background-color: #46a0fd;
+    border-color: #46a0fd;
+}
+
+.emailBtn {
+    background-color: #46a0fd;
 }
 
 .glyphicon {
@@ -239,6 +259,24 @@ tr > td {
     margin-right: -15px;
 }
 
-.readMore {
+.readMore, .readLess {
     float: right;
+}
+
+hr {
+    border-color: #e4e4e4;
+}
+
+#page-wrapper div > ul > li {
+    list-style-type: none;
+}
+
+#nuevaNotiBtn {
+    margin-bottom: 40px;
+    background-color: #46a0fd;
+    border-color: #46a0fd;
+}
+
+.panel-default>.panel-heading {
+    background-color: #eae5e5;
 }

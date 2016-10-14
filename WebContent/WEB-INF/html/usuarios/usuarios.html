@@ -25,7 +25,7 @@
                 <button type="button" class="btn btn-primary verUsuBtn"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Ver</button>
                 <button type="button" class="btn btn-success crearUsuBtn"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Editar</button>
                 <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Borrar</button>
-                <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email</button>
+                <button type="button" class="btn btn-warning emailBtn"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email</button>
             </td>
         </tr>
     </table>
@@ -94,7 +94,68 @@
                         <button type="button" class="btn btn-warning verTickets">Ver/Ocultar Tickets</button>
                     </div>
                     <div hidden id="divTicket">
-                        hola soy un ticket xDxDxDxD
+                        
+                        
+                        <div class="tab-pane fade active in" id="todos-pills">
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" class="">11/07/2016 13:41</a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>PayRoll User: admin</li>
+                                                <li>Status: IN PROGRESS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed" aria-expanded="false">13/07/2016 13:43</a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Status: OPEN</li>
+                                                <li>
+                                                    <button type="button" class="btn btn-primary">Asignarmelo</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false">17/07/2016 11:53</a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Status: OPEN</li>
+                                                <li>
+                                                    <button type="button" class="btn btn-primary">Asignarmelo</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        
+                        
+                        
+                        
                     </div>
                 </div>
                 <div class="modal-footer">
