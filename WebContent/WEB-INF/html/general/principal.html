@@ -24,6 +24,7 @@
     <script src="js/controllers/principal.controller.js"></script>
     <script src="js/controllers/recibos.controller.js"></script>
     <script src="js/controllers/tickets.controller.js"></script>
+    <script src="js/controllers/login.controller.js"></script>
 
     <script>
         $(function () {
@@ -116,7 +117,7 @@
                 <ul class="nav navbar-nav">
                     <li ng-show=role id="switchBtn">
                         <label class="switch">
-                            <input type="checkbox" ng-model="$parent.admin" ng-click="ng-if" ng-init="$parent.admin = role">
+                            <input type="checkbox" ng-model="$parent.admin" ng-init="$parent.admin = role">
                             <div class="slider round"></div>
                         </label>
                     </li>

@@ -1,0 +1,100 @@
+<div class="modal fade" id="myModalUsu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><b>Alicia Perez</b></h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered modalVerUsu">
+                    <tr>
+                        <th>ID</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Nombre Completo</th>
+                        <td>Alicia Perez</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>aliciaperez@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Ultimo Recibo</th>
+                        <td><b>FIRMADO</b></td>
+                    </tr>
+                </table>
+                <div>
+                    <button type="button" class="btn btn-warning verTickets">Ver/Ocultar Tickets</button>
+                </div>
+                <div hidden id="divTicket">
+
+
+                    <div class="tab-pane fade active in" id="todos-pills">
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" class="">11/07/2016 13:41</a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>PayRoll User: admin</li>
+                                                <li>Status: IN PROGRESS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed" aria-expanded="false">13/07/2016 13:43</a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Status: OPEN</li>
+                                                <li>
+                                                    <button type="button" class="btn btn-primary">Asignarmelo</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false">17/07/2016 11:53</a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Status: OPEN</li>
+                                                <li>
+                                                    <button type="button" class="btn btn-primary">Asignarmelo</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
